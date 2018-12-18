@@ -5,14 +5,12 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { ChatModule } from './chate/chate.module';
 import { ChateAfficheComponent } from './chate/chate-affiche/chate-affiche.component';
-import { ApprailComponent } from './apprail/apprail.component';
 import {ChatService} from './chate/chat/service/chat.service';
 
 @NgModule({
 
   declarations: [
-    AppComponent,
-    ApprailComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
