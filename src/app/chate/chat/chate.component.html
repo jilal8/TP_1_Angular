@@ -1,7 +1,12 @@
 <p>
- 	welcome to chate component...
+ 	welcome to chat...
 </p>
 
+<!--pour parcourir et afficher la liste de message-->
 <div id="chat">
-<app-chate-affiche [messages]="messages"></app-chate-affiche>
+	<app-chate-affiche [messages]="messages | async"></app-chate-affiche>
+</div>
+<!--formulaire pour saisir un nouveau--->
+<div id="formulaire">
+	<app-chat-formulaire (nouveauMessage)="gererNouveauMessage($event)"></app-chat-formulaire>
 </div>

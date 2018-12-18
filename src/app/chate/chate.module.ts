@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ChateComponent } from './chat/chate.component';
 import { ChateElementComponent } from './chate-element/chate-element.component';
 import { ChateAfficheComponent } from './chate-affiche/chate-affiche.component';
+import { ChatFormulaireComponent } from './chat/chat-formulaire/chat-formulaire.component';
 @NgModule({
 imports: [
 CommonModule,
@@ -14,7 +15,8 @@ HttpClientModule
 declarations: [
 ChateComponent,
 ChateAfficheComponent,
-ChateElementComponent
+ChateElementComponent,
+ChatFormulaireComponent
 ],
 exports: [ChateComponent]
 })

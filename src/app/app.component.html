@@ -1,8 +1,29 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <app-chate></app-chate>
-</div>
 
+
+</div>
+<app-chate></app-chate>
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Mes appareils</h2>
+      <ul class="list-group">
+        <app-apprail *ngFor="let appareil of appareils"
+                      [appareilName]="appareil.name"
+                      [appareilStatus]="appareil.status"
+                      >
+        </app-apprail>
+      </ul>
+      <button class="btn btn-success"
+              [disabled]="!isAuth"
+              (click)="onAllumer()">Tout allumer</button>
+    </div>
+  </div>
+</div>
+-->
